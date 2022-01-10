@@ -20,9 +20,8 @@ Window class was used for display. JFrame object was created for holds all the o
 
 <img src="finalProject_ffinal\image\UML2CODE.png"/>
 Note: Generated with  `Code2UML`
+
 ## References
-
-
 
 1.	Wikipedia: Minesweeper (video game). https://en.wikipedia.org/wiki/Minesweeper_(video_game)
 2.	Wikipedia: Flood fill 
