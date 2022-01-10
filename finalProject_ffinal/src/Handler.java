@@ -1,5 +1,3 @@
-
-
 import java.util.ArrayList;
 
 public class Handler {
@@ -170,6 +168,41 @@ public class Handler {
             }
         }   
     }
+    public void open(Cell cell) {
+        cell.setEnabled(false);
+        // int x = cell.getType();
+        // cell.setText( x.toString() );
+ 
+        if (cell.getType()==1){
+            cell.setText("X");
+  
+        }
+        else if (cell.getType()==2){
+            cell.setText("1"); 
+        }
+        else if (cell.getType()==0){
+            cell.setText(""); 
+        }
+        else{
+            cell.setText("X");
+            
+        }
+        
+    }
+    public void close (Cell cell) {
+        cell.setEnabled(true);
+        // cell.setDiscovered(false);
+        if (cell.getType()==1){
+            cell.setText("");
+  
+        }
+        else{
+            cell.setText("");
+            
+        }
+
+        
+    }
 
     public void rightClick(Cell cell) {
         if(!cell.isDiscovered()) {
@@ -177,12 +210,12 @@ public class Handler {
                 cell.setFlagged(true);
                 cell.setText("F");
                 flaggedCells++;
-                Window.update(flaggedCells);
+                UI.update(flaggedCells);
             } else {
                 cell.setFlagged(false);
                 cell.setText("");
                 flaggedCells--;
-                Window.update(flaggedCells);
+                UI.update(flaggedCells);
             }
         }
     }

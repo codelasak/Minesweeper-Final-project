@@ -26,9 +26,11 @@ public class Grid extends JPanel {
         for(int i = 1; i <= App.MINECOUNT; i++) {
             while(!picked) {
                 int minePosition = (int) (Math.random() * bound);
+                
                 if (!mines.contains(minePosition)) {
                     mines.add(minePosition);
                     picked = true;
+                    
                 }
             }
             picked = false;
@@ -37,6 +39,7 @@ public class Grid extends JPanel {
         for(int i = 0; i < bound; i++) {
             if(mines.contains(i)) {
                 cellGrid.add(new Cell(1, i, false, false, h));
+                //cellGrid.get(i).setText("x"); // show mines
             } else if(i % App.GRIDSIZE == 0){
                 if(mines.contains(i - App.GRIDSIZE) ||
                         mines.contains(i - App.GRIDSIZE + 1) ||

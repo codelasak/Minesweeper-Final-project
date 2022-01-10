@@ -8,8 +8,8 @@ public class App {
     private Handler handler = new Handler();
 
     public App() {
-        new Window(WIDTH, HEIGHT, GRIDSIZE, "OOP Final project: Minesweeper - ", this, handler);
-        Window.update(0);
+        new UI(WIDTH, HEIGHT, GRIDSIZE, "OOP Final project: Minesweeper", this, handler);
+        UI.update(0);
     }
 
     public static void main(String[] args) {

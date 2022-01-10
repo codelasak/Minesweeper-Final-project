@@ -27,10 +27,15 @@ public class Cell extends JButton {
                 } else {
                     clickButton();
                 }
+    
             }
 
-            public void mouseEntered(MouseEvent e) {}
-            public void mouseExited(MouseEvent e) {}
+            public void mouseEntered(MouseEvent e) {
+                open();
+            }
+            public void mouseExited(MouseEvent e) {
+                close();
+            }
             public void mousePressed(MouseEvent e) {}
             public void mouseReleased(MouseEvent e) {}
         });
@@ -67,5 +72,11 @@ public class Cell extends JButton {
 
     public void rightClickButton() {
         handler.rightClick(this);
+    }
+    public void open() {
+        handler.open(this);
+    }
+    public void close() {
+        handler.close(this);
     }
 }
