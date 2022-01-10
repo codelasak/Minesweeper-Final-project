@@ -17,7 +17,8 @@ Handler class was contained of game functions. Flood fill2 was used control cell
 Window class was used for display. JFrame object was created for holds all the other interface components. 
 
 ## UML
-![Generated with Code2UML](finalProject_ffinal\image\UML2CODE.png)
+
+<img src="finalProject_ffinal\image\UML2CODE.png"/>
 Note: Generated with  `Code2UML`
 ## References
 
