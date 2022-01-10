@@ -6,6 +6,8 @@ import java.util.ArrayList;
 
 public class Grid extends JPanel {
 
+    
+
     private int bound = App.GRIDSIZE * App.GRIDSIZE;
 
     private boolean picked = false;

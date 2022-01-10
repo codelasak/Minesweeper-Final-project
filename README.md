@@ -16,10 +16,12 @@ Grid class extends JPanel and in the class cell was created. In the createCells 
 Handler class was contained of game functions. Flood fill2 was used control cell positions. Flood fill, also called seed fill, is an algorithm that determines and alters the area connected to a given node in a multi-dimensional array with some matching attribute. 
 Window class was used for display. JFrame object was created for holds all the other interface components. 
 
-
+## UML
+![Generated with Code2UML](finalProject_ffinal\image\UML2CODE.png)
+Note: Generated with  `Code2UML`
 ## References
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
 
 1.	Wikipedia: Minesweeper (video game). https://en.wikipedia.org/wiki/Minesweeper_(video_game)
 2.	Wikipedia: Flood fill 
