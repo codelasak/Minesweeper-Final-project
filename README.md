@@ -1,4 +1,4 @@
-## OOP Final Project
+## Minesweeper Game - Java OOP Final Project
 
 
 <img src="finalProject_ffinal\image\screenshot.png"/>
